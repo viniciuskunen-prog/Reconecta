@@ -139,12 +139,10 @@ function Hero() {
       <div className="hero-copy">
         <p className="eyebrow">Experiência transformadora para casais</p>
         <h1>
-          Vocês ainda se amam. Mas talvez tenham esquecido como se encontrar.
+          Reconectar também é uma escolha.
         </h1>
         <p className="lead">
-          O Reconecta é uma experiência criada para casais que desejam fortalecer
-          a relação, resgatar a conexão afetiva e olhar com mais consciência para
-          os movimentos invisíveis que influenciam a vida a dois.
+          Uma experiência para casais que desejam fortalecer o vínculo, melhorar o diálogo e reencontrar a conexão afetiva.
         </p>
 
         <div className="hero-actions">
