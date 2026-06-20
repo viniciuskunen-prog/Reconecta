@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { createRoot } from "react-dom/client";
 import {
   CalendarDays,
@@ -11,8 +11,6 @@ import {
   ChevronDown,
   CheckCircle2,
   ArrowRight,
-  Leaf,
-  HandHeart,
   Compass,
   Ear,
 } from "lucide-react";
@@ -22,6 +20,9 @@ const ASSETS = {
   logo: "/assets/logo-principal.png",
   logoHorizontal: "/assets/logo-horizontal.png",
   symbol: "/assets/simbolo.png",
+  heroCouple: "/assets/hero-casal.webp",
+  roscely: "/assets/roscely.webp",
+  cleyton: "/assets/cleyton.webp",
 };
 
 const painPoints = [
@@ -115,7 +116,7 @@ function Header() {
   return (
     <header className="site-header">
       <a className="header-brand" href="#top" aria-label="Reconecta">
-        <img src={ASSETS.logoHorizontal} alt="Reconecta" />
+        <img src={ASSETS.logoHorizontal} alt="Reconecta" loading="eager" />
       </a>
 
       <nav className="header-nav" aria-label="Navegação principal">
@@ -169,10 +170,8 @@ function Hero() {
         </div>
       </div>
 
-      <div className="hero-visual" aria-label="Marca Reconecta">
-        <div className="symbol-glow"></div>
-        <img className="hero-symbol" src={ASSETS.symbol} alt="" />
-        <img className="hero-logo" src={ASSETS.logo} alt="Reconecta" />
+      <div className="hero-visual hero-visual-photo" aria-label="Cleyton e Roscely">
+        <img className="hero-photo" src={ASSETS.heroCouple} alt="Cleyton e Roscely, facilitadores do Reconecta" />
       </div>
     </section>
   );
@@ -348,9 +347,12 @@ function Facilitators() {
 
       <div className="facilitator-grid">
         <article className="facilitator-card">
-          <div className="photo-placeholder">
-            <Leaf size={44} />
-            <span>Inserir foto</span>
+          <div className="photo-frame">
+            <img
+              className="facilitator-photo"
+              src={ASSETS.roscely}
+              alt="Roscely, facilitadora do Reconecta"
+            />
           </div>
           <h3>Roscely</h3>
           <p>
@@ -360,9 +362,12 @@ function Facilitators() {
         </article>
 
         <article className="facilitator-card">
-          <div className="photo-placeholder">
-            <HandHeart size={44} />
-            <span>Inserir foto</span>
+          <div className="photo-frame">
+            <img
+              className="facilitator-photo"
+              src={ASSETS.cleyton}
+              alt="Cleyton, facilitador do Reconecta"
+            />
           </div>
           <h3>Cleyton</h3>
           <p>
@@ -424,7 +429,7 @@ function FinalCTA() {
 function Footer() {
   return (
     <footer className="footer">
-      <img src={ASSETS.logoHorizontal} alt="Reconecta" />
+      <img src={ASSETS.logoHorizontal} alt="Reconecta" loading="lazy" decoding="async" />
       <p>Reconexão • Presença • Respeito • Escuta • Parceria</p>
       <span>© Reconecta. Todos os direitos reservados.</span>
     </footer>
@@ -432,19 +437,36 @@ function Footer() {
 }
 
 function App() {
+  useEffect(() => {
+    const elements = document.querySelectorAll(".reveal");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+    elements.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       <Header />
       <main>
         <Hero />
-        <PainPoints />
-        <About />
-        <Benefits />
-        <Audience />
-        <Schedule />
-        <Facilitators />
-        <FAQ />
-        <FinalCTA />
+        <div className="reveal"><PainPoints /></div>
+        <div className="reveal"><About /></div>
+        <div className="reveal"><Benefits /></div>
+        <div className="reveal"><Audience /></div>
+        <div className="reveal"><Schedule /></div>
+        <div className="reveal"><Facilitators /></div>
+        <div className="reveal"><FAQ /></div>
+        <div className="reveal"><FinalCTA /></div>
       </main>
       <Footer />
     </>
