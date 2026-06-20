@@ -155,7 +155,13 @@ function Hero() {
             Ver programação
           </a>
         </div>
+      </div>
 
+      <div className="hero-visual hero-visual-photo" aria-label="Cleyton e Roscely">
+        <img className="hero-photo" src={ASSETS.heroCouple} alt="Cleyton e Roscely, facilitadores do Reconecta" loading="eager" />
+      </div>
+
+      <div className="hero-footer">
         <div className="event-strip">
           <div>
             <CalendarDays size={22} />
@@ -168,10 +174,6 @@ function Hero() {
             <strong>9h às 12h</strong>
           </div>
         </div>
-      </div>
-
-      <div className="hero-visual hero-visual-photo" aria-label="Cleyton e Roscely">
-        <img className="hero-photo" src={ASSETS.heroCouple} alt="Cleyton e Roscely, facilitadores do Reconecta" />
       </div>
     </section>
   );
