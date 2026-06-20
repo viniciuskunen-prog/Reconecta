@@ -144,7 +144,13 @@ function Hero() {
         <p className="lead">
           Uma experiência para casais que desejam fortalecer o vínculo, melhorar o diálogo e reencontrar a conexão afetiva.
         </p>
+      </div>
 
+      <div className="hero-visual hero-visual-photo" aria-label="Cleyton e Roscely">
+        <img className="hero-photo" src={ASSETS.heroCouple} alt="Cleyton e Roscely, facilitadores do Reconecta" loading="eager" decoding="async" />
+      </div>
+
+      <div className="hero-after-photo">
         <div className="hero-actions">
           <a className="button" href="#inscricao">
             Quero participar <ArrowRight size={18} />
@@ -153,13 +159,7 @@ function Hero() {
             Ver programação
           </a>
         </div>
-      </div>
 
-      <div className="hero-visual hero-visual-photo" aria-label="Cleyton e Roscely">
-        <img className="hero-photo" src={ASSETS.heroCouple} alt="Cleyton e Roscely, facilitadores do Reconecta" loading="eager" />
-      </div>
-
-      <div className="hero-footer">
         <div className="event-strip">
           <div>
             <CalendarDays size={22} />
