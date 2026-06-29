@@ -308,7 +308,7 @@ p {
 }
 
 .event-strip svg {
-  grid-row: 1 / 3;
+  grid-row: 1 / 4;
   color: var(--dourado-ocre);
 }
 
@@ -322,6 +322,16 @@ p {
 .event-strip strong {
   color: var(--azul-profundo);
   font-size: 0.98rem;
+}
+
+.event-strip small {
+  display: block;
+  margin: 0.15rem 0 0.2rem;
+  font-size: 0.72rem;
+  line-height: 1.2;
+  color: var(--azul-profundo);
+  opacity: 0.72;
+  font-weight: 500;
 }
 
 .hero-visual {
@@ -1019,6 +1029,10 @@ p {
 
   .event-strip span {
     font-size: 0.68rem;
+  }
+
+  .event-strip small {
+    font-size: 0.7rem;
   }
 
   .event-strip strong {

@@ -93,7 +93,7 @@ const faqs = [
   {
     question: "Como será a programação?",
     answer:
-      "O encontro acontece nos dias 1 e 2 de agosto de 2026, no sábado das 13h30 às 18h e no domingo das 9h às 12h, no Instituto Athena em Balneário Camboriú.",
+      "O encontro acontece nos dias 1 e 2 de agosto de 2026, no sábado das 13h30 às 18h e no domingo das 9h às 12h, no Instituto Atena em Balneário Camboriú.",
   },
   {
     question: "Como faço minha inscrição?",
@@ -164,11 +164,13 @@ function Hero() {
           <div>
             <CalendarDays size={22} />
             <span>Sábado</span>
+            <small>1 de agosto</small>
             <strong>13h30 às 18h</strong>
           </div>
           <div>
             <Clock size={22} />
             <span>Domingo</span>
+            <small>2 de agosto</small>
             <strong>9h às 12h</strong>
           </div>
         </div>
@@ -325,10 +327,10 @@ function Schedule() {
             <CalendarDays size={18} /> Data: <strong>1 e 2 de agosto de 2026</strong>
           </p>
           <p>
-            <MapPin size={18} /> Local: <strong>Instituto Athena</strong>
+            <MapPin size={18} /> Local: <strong>Instituto Atena</strong>
           </p>
           <p>
-            <MapPin size={18} /> Endereço: <strong>R. Paraguai, 262 — Nações, Balneário Camboriú/SC — CEP 88338-090</strong>
+            <MapPin size={18} /> Endereço: <strong>R. Paraguai, 262 — Nações<br />Balneário Camboriú/SC — CEP 88338-090</strong>
           </p>
         </article>
       </div>
