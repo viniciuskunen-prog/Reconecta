@@ -93,7 +93,7 @@ const faqs = [
   {
     question: "Como será a programação?",
     answer:
-      "O encontro acontece no sábado, das 13h30 às 18h, e no domingo, das 9h às 12h.",
+      "O encontro acontece nos dias 1 e 2 de agosto de 2026, no sábado das 13h30 às 18h e no domingo das 9h às 12h, no Instituto Athena em Balneário Camboriú.",
   },
   {
     question: "Como faço minha inscrição?",
@@ -126,7 +126,7 @@ function Header() {
         <a href="#faq">FAQ</a>
       </nav>
 
-      <a className="button button-small" href="#inscricao">
+      <a className="button button-small" href="https://wa.me/5547997102970?text=Ol%C3%A1%21%20Tenho%20interesse%20em%20participar%20do%20Reconecta%20nos%20dias%201%20e%202%20de%20agosto.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20inscri%C3%A7%C3%A3o." target="_blank" rel="noreferrer">
         Quero participar
       </a>
     </header>
@@ -152,7 +152,7 @@ function Hero() {
 
       <div className="hero-after-photo">
         <div className="hero-actions">
-          <a className="button" href="#inscricao">
+          <a className="button" href="https://wa.me/5547997102970?text=Ol%C3%A1%21%20Tenho%20interesse%20em%20participar%20do%20Reconecta%20nos%20dias%201%20e%202%20de%20agosto.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20inscri%C3%A7%C3%A3o." target="_blank" rel="noreferrer">
             Quero participar <ArrowRight size={18} />
           </a>
           <a className="button button-outline" href="#programacao">
@@ -322,13 +322,13 @@ function Schedule() {
         <article className="info-card">
           <h3>Informações do evento</h3>
           <p>
-            <CalendarDays size={18} /> Data: <strong>[INSERIR DATA]</strong>
+            <CalendarDays size={18} /> Data: <strong>1 e 2 de agosto de 2026</strong>
           </p>
           <p>
-            <MapPin size={18} /> Local: <strong>[INSERIR LOCAL]</strong>
+            <MapPin size={18} /> Local: <strong>Instituto Athena</strong>
           </p>
           <p>
-            <MapPin size={18} /> Endereço: <strong>[INSERIR ENDEREÇO]</strong>
+            <MapPin size={18} /> Endereço: <strong>R. Paraguai, 262 — Nações, Balneário Camboriú/SC — CEP 88338-090</strong>
           </p>
         </article>
       </div>
@@ -433,7 +433,7 @@ function FinalCTA() {
         </p>
       </div>
 
-      <a className="button" href="https://wa.me/5500000000000" target="_blank" rel="noreferrer">
+      <a className="button" href="https://wa.me/5547997102970?text=Ol%C3%A1%21%20Tenho%20interesse%20em%20participar%20do%20Reconecta%20nos%20dias%201%20e%202%20de%20agosto.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20inscri%C3%A7%C3%A3o." target="_blank" rel="noreferrer">
         Garantir minha vaga <ArrowRight size={18} />
       </a>
     </section>
