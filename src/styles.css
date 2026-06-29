@@ -678,9 +678,25 @@ p {
   object-position: center top;
 }
 
+.facilitator-role {
+  margin: 0.35rem 0 1rem;
+  color: var(--dourado-ocre);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.facilitator-card p {
+  line-height: 1.7;
+}
+
 @media (max-width: 680px) {
   .photo-frame {
     height: 220px;
+  }
+
+  .facilitator-card p {
+    font-size: 0.92rem;
+    line-height: 1.65;
   }
 }
 

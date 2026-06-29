@@ -351,13 +351,20 @@ function Facilitators() {
             <img
               className="facilitator-photo"
               src={ASSETS.roscely}
-              alt="Roscely, facilitadora do Reconecta"
+              alt="Roscely Scheffer, facilitadora do Reconecta"
+              loading="lazy"
+              decoding="async"
             />
           </div>
-          <h3>Roscely</h3>
+          <h3>Roscely Scheffer</h3>
+          <p className="facilitator-role">Psicanalista, Filósofa e Escritora</p>
+
           <p>
-            [Inserir mini bio da Roscely com sua abordagem, experiência e papel
-            na condução do Reconecta.]
+            Há mais de 10 anos dedicada ao autoconhecimento e ao desenvolvimento humano, Roscely Scheffer é formada em Filosofia, com especializações em Filosofia, Sociologia, Psicanálise e Constelação Familiar pela Hellinger Schule, da Alemanha. Atualmente é analista em formação em Psicologia Analítica Junguiana.
+          </p>
+
+          <p>
+            Autora dos livros <em>De Onde Vêm as Borboletas</em> e <em>Edifique Seu Reinado</em>, desenvolveu uma abordagem própria de acompanhamento terapêutico, conduzindo pessoas em seus processos de autoconhecimento, transformação pessoal e ampliação da consciência. Também é criadora da Escola de Rainhas, projeto voltado ao desenvolvimento feminino.
           </p>
         </article>
 
@@ -366,13 +373,20 @@ function Facilitators() {
             <img
               className="facilitator-photo"
               src={ASSETS.cleyton}
-              alt="Cleyton, facilitador do Reconecta"
+              alt="Cleyton Biazotto Silva, facilitador do Reconecta"
+              loading="lazy"
+              decoding="async"
             />
           </div>
-          <h3>Cleyton</h3>
+          <h3>Cleyton Biazotto Silva</h3>
+          <p className="facilitator-role">Psicanalista e Filósofo</p>
+
           <p>
-            [Inserir mini bio do Cleyton com sua abordagem, experiência e papel
-            na condução do Reconecta.]
+            Há mais de 10 anos dedicado ao estudo da natureza humana, do autoconhecimento e do desenvolvimento da consciência, Cleyton Biazotto Silva é formado em Filosofia, com especializações em Filosofia, Sociologia, Psicanálise e Constelação Familiar pela Hellinger Schule, da Alemanha.
+          </p>
+
+          <p>
+            Com sólida trajetória no campo do pensamento filosófico e da investigação das questões existenciais, atua acompanhando pessoas em seus processos de autoconhecimento, ampliação da consciência e transformação pessoal, integrando reflexão filosófica, escuta analítica e compreensão sistêmica da vida humana.
           </p>
         </article>
       </div>
